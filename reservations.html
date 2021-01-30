@@ -15,13 +15,12 @@
 <body>
 
   <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron" style="text-align: center">
       <h1>&#127858 Hot Restaurant</h1>
       <h3>Book your seats before it</h3>
       <hr>
-      <a href="tables.html"><button class="btn btn-danger btn-lg"><span class="fa fa-eye"></span> View Tables</button></a>
-      <a href="index.html"><button class="btn btn-danger btn-lg"><span class="fa fa-eye">Home</span> View
-       Tables</button></a>
+      <a href="tables.html"><button class="btn btn-primary btn-lg"></span> &#128196; View Tables</button></a>
+      <a href="index.html"><button class="btn btn-dark btn-lg"></span> 🏠</button></a>
     </div>
     <div class="row">
 
@@ -78,10 +77,10 @@
       };
 
       // Question: What does this code do??
-      $.post("/api/", newCharacter)
+      $.post("/api/", newReservation)
         .then(function (data) {
           console.log(".html", data);
-          alert("");
+          alert("Reservation Made!");
         });
     });
   </script>
